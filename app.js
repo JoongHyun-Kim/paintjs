@@ -22,11 +22,15 @@ function onMouseMove(event) {
    const y = event.offsetY;
    if (!painting) {
       ctx.beginPath();
-      ctx.moveTo(x, y);
    } else {
       ctx.lineTo(x, y);
       ctx.stroke();
    }
+}
+
+function onMouseEnter(event) {
+   x = event.offsetX;
+   y = event.offsetY;
 }
 
 function onMouseDown(event) {
@@ -37,5 +41,5 @@ if (canvas) {
    canvas.addEventListener('mousemove', onMouseMove);
    canvas.addEventListener('mousedown', startPainting);
    canvas.addEventListener('mouseup', stopPainting);
-   canvas.addEventListener('mouseleave', stopPainting);
+   canvas.addEventListener('mouseenter', onMouseEnter);
 }
