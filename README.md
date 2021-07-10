@@ -1,10 +1,11 @@
-# PaintJS
+# 🎨 PaintJS
 
-Painting Board made with VanillaJs
+Painting Board made with VanillaJs 
 
----
 
-## 개선 사항
+<br />
+
+## ✍🏻 개선 사항
 
 -  header 추가
 -  Erase Btn 및 기능 추가
